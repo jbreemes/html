@@ -1,0 +1,81 @@
+* {
+    margin: 10px;
+    align-self: center;
+}
+
+body {
+    margin: auto;
+    padding: 30px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 20% 30% 10% 40%;
+}
+
+h1{
+    grid-column: 1/5;
+    font-size: 30px;
+}
+
+select {
+    width: 303px;
+    border: solid 1px cornflowerblue;
+}
+
+.eten {
+    display: flex;
+    grid-column: 4/5;
+}
+
+.textinputs {
+    width: 300px;
+    border: solid 1px cornflowerblue;
+}
+
+#geslacht {
+    width: 300px;
+}
+
+#kleurogen {
+    grid-column: 1/2;
+}
+
+
+
+#datum {
+    grid-column: 1/2;
+}
+
+textarea {
+    width: 350px;
+    height: 150px;
+    border: solid 1px cornflowerblue;
+}
+
+#textarea {
+    grid-column: 1/2;
+    align-self: flex-start;
+}
+
+#knop {
+    width: 120px;
+    height: 35px;
+    align-self: flex-end;
+}
+
+#submitknop {
+    width: 120px;
+    height: 35px;
+    align-self: flex-end;
+    box-sizing: border-box;
+}
+
+div#buttons {
+    grid-column: 4/5;
+    height: 100%;
+    display: flex;
+
+}

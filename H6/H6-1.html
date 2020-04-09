@@ -1,17 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-    <style>
-        body{
-            font-family: 'Oswald', sans-serif;
-        }
-    </style>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulier</title>
+    <link rel="stylesheet" href="H6-1.css">
 </head>
 <body>
-<h1>formuliertje</h1>
+<form action="https://www.savatarian.com/html5/form.php" method="post">
+    <h1>Voorbeeldformulier</h1>
 
+    <label for="voornaam">Voornaam:</label>
+    <input class="textinputs" type="text" name="voornaam" id="voornaam">
+
+    <label>Lekker eten:</label>
+    <div class="eten">
+        <input type="checkbox">
+        <label>Sperziebonen</label>
+    </div>
+
+    <label for="tussenvoegsel">Tussenvoegsel:</label>
+    <input class="textinputs" type="text"  name="tussenvoegsel" id="tussenvoegsel">
+
+    <div class="eten">
+        <input type="checkbox">
+        <label>Aardappelen</label>
+    </div>
+
+    <label for="achternaam">Achternaam:</label>
+    <input class="textinputs" type="text"  name="achternaam" id="achternaam">
+
+    <div class="eten">
+        <input type="checkbox">
+        <label>Hamburger</label>
+    </div>
+
+    <label for="geslacht">Geslacht</label>
+    <div id="geslacht">
+        <input type="radio" name="geslacht" value="man">
+        <label>Man</label>
+        <input type="radio" name="geslacht" value="vrouw">
+        <label>Vrouw</label>
+    </div>
+
+    <label id="kleurogen" for="kleurogen">Kleur ogen:</label>
+    <select name="kleur-ogen">
+        <option>Groen</option>
+        <option>Blauw</option>
+        <option>Bruin</option>
+    </select>
+
+    <label id="datum" for="datum">Geboortedatum:</label>
+    <input class="textinputs" type="date" name="geboortedatum">
+
+    <label id="textarea" for="textarea">Omschrijving:</label>
+    <textarea name="omschrijving"></textarea>
+    <br>
+    <div id="buttons">
+        <button id="knop" type="button">Annuleren</button>
+        <input id="submitknop" type="submit" value="Submit">
+    </div>
+</form>
 </body>
+<footer>
+
+</footer>
 </html>
